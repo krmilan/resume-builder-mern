@@ -1,0 +1,119 @@
+.layout {
+    height: 100vh;
+    padding: 20px 30px;
+    /* Adjusted padding for better balance */
+    box-sizing: border-box;
+    /* Include padding in the element's total width and height */
+}
+
+.header {
+    height: 80px;
+    /* Fixed height for consistent appearance */
+    background-color: #007bff;
+    /* Changed to a more modern blue color */
+    opacity: 0.9;
+    /* Slightly increased opacity for better contrast */
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* Added padding for better spacing */
+    border: 1px solid #0056b3;
+    /* Darker border for better visibility */
+    border-radius: 10px;
+    /* Rounded corners for a modern look */
+    margin-bottom: 20px;
+    /* Increased margin for better spacing from content */
+}
+
+.header h1 {
+    color: #fff;
+    /* White color for better contrast */
+    font-size: 24px;
+    /* Increased font size for better visibility */
+    margin: 0;
+    /* Removed margin for better alignment */
+}
+
+.header button {
+    background-color: #fff;
+    /* White background for the button */
+    border: 1px solid #007bff;
+    /* Blue border for a cohesive look */
+    font-size: 16px;
+    /* Increased font size for readability */
+    color: #007bff;
+    /* Blue color for the button text */
+    padding: 8px 16px;
+    /* Added padding for better button appearance */
+    border-radius: 5px;
+    /* Rounded corners for the button */
+    cursor: pointer;
+    /* Added cursor style for better UX */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.header button:hover {
+    background-color: #007bff;
+    /* Blue background on hover */
+    color: #fff;
+    /* White text on hover */
+}
+
+.content {
+    height: calc(100vh - 90px);
+    /* Adjusted height to accommodate header */
+    border: 1px solid #ddd;
+    /* Light border for a subtle look */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Enhanced shadow for subtle depth */
+    padding: 20px;
+    /* Increased padding for better spacing */
+    background-color: #fff;
+    /* White background for the content */
+    box-sizing: border-box;
+    /* Include padding in the element's total width and height */
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    /* Default link color */
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Underline on hover for better visibility */
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        height: 60px;
+        /* Adjusted height for smaller screens */
+        padding: 10px;
+        /* Reduced padding */
+    }
+
+    .header h1 {
+        font-size: 18px;
+        /* Adjusted font size for smaller screens */
+    }
+
+    .header button {
+        font-size: 12px;
+        /* Adjusted font size for better fit */
+        padding: 6px 12px;
+        /* Adjusted padding for smaller screens */
+    }
+
+    .content {
+        height: calc(100vh - 60px);
+        /* Adjusted height for smaller screens */
+        padding: 15px;
+        /* Reduced padding */
+    }
+}

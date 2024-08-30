@@ -1,0 +1,68 @@
+.auth-parent {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.auth-parent h1 {
+    font-size: 26px;
+    /* Increased size for better prominence */
+    font-weight: 700;
+    /* Slightly bolder for emphasis */
+    margin-bottom: 20px;
+    /* Spacing between heading and form */
+    color: #333;
+    /* Darker color for better readability */
+}
+
+.auth-parent form {
+    width: 100%;
+    max-width: 400px;
+    /* Use max-width for better responsiveness */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow for depth */
+    padding: 20px;
+    background-color: #fff;
+    /* Background color for the form */
+    border-radius: 10px;
+    /* Rounded corners for a modern look */
+}
+
+.brand {
+    font-size: 22px;
+    /* Slightly larger text for visibility */
+    color: #000;
+    /* Standard text color */
+    padding: 10px 15px;
+    /* Added padding for better spacing */
+    text-align: center;
+    border: 2px solid #000;
+    /* Slightly thicker border for prominence */
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Light shadow for subtle depth */
+}
+
+@media screen and (max-width: 700px) {
+    .auth-parent form {
+        width: 90%;
+        /* Adjust width to fit smaller screens */
+        padding: 15px;
+        /* Reduced padding for better fit */
+    }
+
+    .brand {
+        font-size: 18px;
+        /* Adjust font size for smaller screens */
+        padding: 8px 12px;
+        /* Adjust padding for better fit */
+    }
+}

@@ -1,0 +1,145 @@
+/* HomePage Template Styling */
+.home .template {
+    margin: 20px;
+    border: 1px solid #007bff;
+    /* Changed to a more modern blue color */
+    border-radius: 8px;
+    /* Rounded corners for a modern look */
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    /* Added max-width for better responsiveness */
+    background-color: #fff;
+    /* Added background color for better contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Enhanced shadow for subtle depth */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    /* Smooth transitions */
+}
+
+.home .template:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Increased shadow on hover */
+    transform: scale(1.02);
+    /* Slightly scale up on hover */
+}
+
+.home .template .text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+    /* Smooth transitions */
+}
+
+.home .template:hover .text {
+    font-size: 20px;
+    /* Adjusted font size for better readability */
+    background-color: rgba(0, 0, 255, 0.7);
+    /* Semi-transparent blue background */
+    opacity: 1;
+    color: #fff;
+}
+
+.home .template .text button {
+    background-color: #fff;
+    /* White background for the button */
+    color: #007bff;
+    /* Blue color for the button text */
+    font-size: 16px;
+    padding: 10px 20px;
+    /* Added padding for better button appearance */
+    border: 1px solid #007bff;
+    /* Blue border to match the button text color */
+    border-radius: 5px;
+    /* Rounded corners for the button */
+    cursor: pointer;
+    /* Added cursor style for better UX */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transitions */
+}
+
+.home .template .text button:hover {
+    background-color: #007bff;
+    /* Blue background on hover */
+    color: #fff;
+    /* White text on hover */
+}
+
+/* template1 styling */
+.template1-parent {
+    color: rgb(70, 62, 62);
+    padding: 50px;
+    background-color: #f9f9f9;
+    /* Light background color for better contrast */
+    border-radius: 8px;
+    /* Rounded corners for a modern look */
+}
+
+.template1-parent h1 {
+    font-size: 36px;
+    /* Increased font size for better visibility */
+    font-weight: 700;
+    /* Bolder text for emphasis */
+    color: rgb(70, 62, 62);
+    margin-bottom: 20px;
+    /* Spacing below the heading */
+}
+
+.template1-parent p {
+    padding-top: 0;
+    margin-bottom: 10px;
+    /* Increased margin for better spacing */
+    font-size: 18px;
+    /* Slightly larger font size for better readability */
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    /* Light gray color for the divider */
+    margin: 20px 0;
+    /* Added margin for spacing */
+}
+
+.template1-parent h3 {
+    font-size: 24px;
+    /* Adjusted font size for headings */
+    font-weight: 700;
+    /* Bolder text for emphasis */
+    margin-bottom: 10px;
+    /* Spacing below the heading */
+}
+
+.template1-parent h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1500px) {
+    .home .template {
+        width: 80%;
+        /* Adjust width for medium-sized screens */
+        max-width: 300px;
+        /* Adjust max-width */
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .home .template {
+        width: 90%;
+        /* Adjust width for smaller screens */
+        max-width: 250px;
+        /* Adjust max-width */
+    }
+}
